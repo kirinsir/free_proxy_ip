@@ -139,14 +139,6 @@ if __name__ == '__main__':
     threading_runAll()
     time.sleep(5)
     threading_run()
-    # while True:
-    #     if q.qsize()==0:
-    #         try:
-    #             con.commit()
-    #             break
-    #         except Exception as e:
-    #             print('错误',e)
-    print('结束了')
     con.commit()
     print(time.time()-strat)
 
